@@ -1,0 +1,383 @@
+/* style general */
+* {
+  /* Supprime toutes les marges */
+  margin: 0; 
+   /* Supprime tous les espacements internes */
+  padding: 0;
+}
+
+body {
+  /* la police du texte (arial) */
+  font-family: Arial;
+  /* Couleur du texte */
+  color: #333;
+}
+
+/*la bar de navigation */
+/* Conteneur principal du header */
+.b1 {
+   /* Couleur de fond (bleu très foncé) */
+  background: #1a1a2e;
+   /* Espace interne (haut/bas = 18px, gauche/droite = 60px) */
+  padding: 18px 60px;
+   /* Active Flexbox (mise en ligne) */
+  display: flex;
+  /* Espace entre logo et menu */
+  justify-content: space-between;
+   /* Aligne verticalement au centre */
+  align-items: center;
+}
+
+/* Logo (DevStart) */
+.b1a {
+  /* Texte en blanc */
+  color: white;
+  /* Taille du texte */
+  font-size: 22px;
+  /* Texte en gras */
+  font-weight: bold;
+}
+
+/* Liens du menu */
+.b1b a {
+  /* Couleur gris clair */
+  color: #ccc;
+  /* Supprime le soulignement */
+  text-decoration: none;
+  /* Espace entre les liens */
+  margin-left: 25px;
+  /* Taille du texte */
+  font-size: 14px;
+}
+
+/* Effet sur les liens */
+.b1b a:hover {
+ /* Devient blanc quand on passe la souris */ 
+  color: white;
+}
+
+/*  section milieu haut */
+.c {
+   /* Met les éléments côte à côte (texte + image) */
+  display: flex;
+  /* Centre verticalement */
+  align-items: center;
+  /* Espacement interne */
+  padding: 80px 60px;
+  /* Fond gris très clair */
+  background: #f9f9f9;
+  /* Espace entre texte et image */
+  gap: 40px;
+}
+
+/* Partie gauche (texte) */
+.c1 {
+  /* Prend tout l'espace disponible */
+  flex: 1;
+}
+
+/* Titre principal */
+.c1a {
+  /* Titre principal */
+  font-size: 38px;
+  /* Gras */
+  font-weight: bold;
+   /* Couleur sombre */
+  color: #1a1a2e;
+   /* Espacement entre lignes */
+  line-height: 1.3;
+  /* Espace sous le titre */
+  margin-bottom: 20px;
+}
+
+/* Description */
+.c1b {
+  /* Taille normale */
+  font-size: 16px;
+   /* Gris */
+  color: #555;
+  /* Texte plus lisible */
+  line-height: 1.7;
+  /* Espace avant le bouton */
+  margin-bottom: 30px;
+}
+
+/* Bouton */
+.c1c a {
+   /* Couleur du bouton (rose/rouge) */
+  background: #e94560;
+   /* Texte blanc */
+  color: white;
+  /* Taille du bouton */
+  padding: 14px 32px;
+  /* Coins arrondis */
+  border-radius: 6px;
+  /* Supprime soulignement */
+  text-decoration: none;
+  /* Texte en gras */
+  font-weight: bold;
+}
+
+/* Image à droite */
+.c2 img {
+   /* Prend toute la largeur du conteneur */
+  width: 100%;
+  /* Mais ne dépasse pas 480px */
+  max-width: 480px;
+  /* Coins arrondis */
+  border-radius: 12px;
+}
+
+/* services */
+/* style du bloc relatif aux prestations*/
+.d {
+  padding: 70px 60px;
+  background: white;
+}
+/* style du titre */
+.d0 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+}
+/* style de la grille des services */
+.dd {
+  display: flex;
+  gap: 24px;
+}
+/* style des blocs des differents services */
+.d1, .d2, .d3, .d4 {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 28px 22px;
+  border-radius: 10px;
+  text-align: center;
+}
+/* style des icones des differents services */
+.d1i, .d2i, .d3i, .d4i {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+/* style du titre des differents services */
+.d1t, .d2t, .d3t, .d4t {
+  font-size: 17px;
+  font-weight: bold;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+/* style des informations sur les differents services */
+.d1p, .d2p, .d3p, .d4p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Conteneur principal */
+.e {
+  display: flex;              /* Mise en page en flexbox */
+  padding: 70px 60px;         /* Espacement interne */
+  background: #f0f0f5;        /* Fond gris clair */
+  gap: 50px;                  /* Espacement entre image et texte */
+  align-items: center;        /* Alignement vertical centré */
+}
+
+/* Bloc image */
+.e1 {
+  flex: 1;                    /* Prend 50% de l’espace */
+}
+
+.eimg {
+  width: 100%;                /* Image responsive */
+  border-radius: 12px;        /* Coins arrondis */
+}
+
+/* Bloc texte */
+.e2 {
+  flex: 1;                    /* Prend 50% de l’espace */
+}
+
+.e2t {
+  font-size: 28px;            /* Taille du titre */
+  font-weight: bold;          /* Gras */
+  color: #1a1a2e;             /* Couleur sombre */
+  margin-bottom: 18px;        /* Espacement sous le titre */
+}
+
+.e2p {
+  font-size: 15px;            /* Taille du texte */
+  color: #555;                /* Gris moyen */
+  line-height: 1.7;           /* Hauteur de ligne pour lisibilité */
+  margin-bottom: 14px;        /* Espacement entre paragraphes */
+}
+
+/* Bouton "Notre histoire" */
+.e2b {
+  display: inline-block;      /* Permet le padding et margin */
+  margin-top: 10px;
+  background: #1a1a2e;        /* Fond sombre */
+  color: white;               /* Texte blanc */
+  padding: 12px 26px;         /* Espacement interne */
+  border-radius: 6px;         /* Coins arrondis */
+  text-decoration: none;      /* Supprime soulignement */
+  font-weight: bold;
+  transition: background 0.3s; /* Animation fluide sur hover */
+}
+
+/* Effet au survol du bouton */
+.e2b:hover {
+  background: #333;           /* Fond plus clair au survol */
+}
+
+/* style general */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  color: #333;
+}
+
+
+
+/* temoignages */
+
+/* section principale*/
+.f {
+  padding: 70px 60px;
+  background: #1a1a2e; /* change la couleur de la section en bleu*/
+}
+
+/*  div contenant le titre de la section principale*/
+.f0 {
+  font-size: 28px; /* taille de la police*/
+  font-weight: bold; /* degré pour le gras appliqué au contenu de  la div*/
+  color: white;
+  text-align: center;/* aligne au centre les textes dans la div*/
+  margin-bottom: 40px;/* déplace la div vers le haut*/
+}
+
+
+
+/* section secondaire*/
+.ff {
+  display: flex;/* mets les éléments de la div côte à côte horizontalement*/
+  gap: 24px; /*  espacement entre les éléments de la div*/
+}
+
+
+/* Les sections contenant vraiment les témoignages*/ 
+.f1, .f2, .f3 {
+  flex: 1;/* chaque div aura la même largeur*/
+  background: #16213e;
+  padding: 28px; /*  espacement entre les div et la section secondaire*/
+  border-radius: 10px;/* arrondit les bords des div*/
+  border-left: 4px solid #e94560; /*rends solide la partie gauche des div et cette partie devient orange*/
+}
+
+
+/* premières parties des témoignages de couleur blanche et mis en italique*/
+.f1t, .f2t, .f3t {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.7;/* espacement entre les lignes contenues dans les div*/
+  font-style: italic;/* mets les éléments  en italiques*/
+  margin-bottom: 16px; /* déplace vers le haut les div*/
+}
+
+
+/* deuxième partie des commentaires mise en orange et en gras*/
+.f1n, .f2n, .f3n {
+  font-size: 13px;
+  color: #e94560;
+  font-weight: bold;/* mets les éléments en gras*/
+}
+
+/* contact */
+/* bon ici c'est pour definir le padding genre l'espace entre les choses */
+.g {
+  padding: 70px 60px;
+  background: #f9f9f9;
+}
+/* c'est centrer pour definir la taille et mettre en gars */
+.g0 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 36px;
+}
+/* ici on a definir les tailles et les espaces puis on a aussi on a  empiler les elemnets verticalement */
+.gf {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* ici on a definir le padding genre definir la taille des cases puis supprimer les contours inutiles et la taille de l'ecrire*/
+.gi {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+/* ici c'est juste pour tirer la case un peu plus long faire les bordure et supprimercertains bordure inutiles*/
+.gt {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  height: 140px;
+  resize: vertical;
+  outline: none;
+}
+/* ici c'est donner les couleur le coté gras et aussi les petits bordure il les effaces puis aussi le changement de curseur en main facon la */
+.gb {
+  background: #e94560;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gb:hover {
+  background: #c73652;
+}
+
+/* footer */
+.h {
+  background: #0f0f1a; /* ici c'est couleur noir facon quoi voir en bas la ou est ecrit tous les trucs */
+  padding: 30px 60px; /* ici c'espace ou la taille excat donner au cadrant de couleur qui est en bas */
+  display: flex;
+  justify-content: space-between;/* ici on aura un espace entre les elements automatiquemnet*/
+  align-items: center;
+}
+/*ici en gros c'est juste la couleur et la taille de l'affichage*/
+.h1 {
+  color: #aaa;
+  font-size: 13px;
+}
+/*ici ona donner tourjours la couleurs et aussi on a refuser les soulignes et aussi on a creer un espace entre c'est mot et aussi la taille */
+.h2 a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 13px;
+}
+/* ici c'est plutot pour avoir un style genre quand le curseur touche les ecrire la precisent t */
+.h2 a:hover {
+  color: white;
+}
+
+.h3 {
+  color: #aaa;
+  font-size: 13px;
+}

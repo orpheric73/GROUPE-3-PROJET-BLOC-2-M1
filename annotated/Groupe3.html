@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+  <html>
+     <head>
+         <title>site</title>
+         <link rel="stylesheet" href="style.css">
+    </head>
+
+  <body>
+
+
+<!-- haut de page renfermant le nom de l'entreprise et du menu de navigation -->
+<div class="b1">
+  <!-- Nom de l'entreprise -->
+  <div class="b1a">DevStart</div>
+  <!-- La menu de navigation avec des liens qui emmeneront sur les differentes pages du site mais a l'instant vide-->
+  <div class="b1b">
+    <!-- Lien vers l'accueil -->
+    <a href="#">acc</a>
+    <!-- Lien vers nous -->
+    <a href="#">nous</a>
+    <!-- Lien vers services -->
+    <a href="#">serv</a>
+    <!-- Lien vers contact -->
+    <a href="#">cont</a>
+  </div>
+</div>
+<!-- section du milieu haut -->
+<div class="c">
+  <!-- Partie gauche du section du milieu -->
+  <div class="c1">
+    <!-- Titre principal du site -->
+    <div class="c1a">On construit vos rêves numériques</div>
+    <!-- Message montrant la spécialité du site -->
+    <div class="c1b">Agence web spécialisée dans la création de sites modernes et performants pour les entreprises qui veulent se démarquer.</div>
+    <!-- Bouton permettant de naviguer proprement sur le site -->
+    <div class="c1c"><a href="#">Commencer</a></div>
+  </div>
+  <!-- Partie droite du section de milieu -->
+  <div class="c2">
+    <!-- image  -->
+    <img src="hero.png">
+  </div>
+</div>
+
+<!-- les trucs qu'on fait -->
+<!-- les prestations -->
+<div class="d">
+  <!-- titre du bloc -->
+  <div class="d0">Ce qu'on fait</div>
+  <!-- bloc présentant les services -->
+  <div class="dd">
+    <!-- bloc présentant le service de design -->
+    <div class="d1">
+      <!-- icone du service -->
+      <div class="d1i">🎨</div>
+      <!-- nom du service -->
+      <div class="d1t">Design</div>
+      <!-- description du service -->
+      <div class="d1p">On crée des interfaces belles et modernes adaptées à votre marque.</div>
+    </div>
+    <!-- bloc présentant le service de développement -->
+    <div class="d2">
+      <!-- icone du service -->
+      <div class="d2i">💻</div>
+      <!-- nom du service -->
+      <div class="d2t">Développement</div>
+      <!-- description du service -->
+      <div class="d2p">Sites rapides, propres et bien codés pour tous les écrans.</div>
+    </div>
+    <!-- bloc présentant le service de marketing digital -->
+    <div class="d3">
+      <!-- icone du service -->
+      <div class="d3i">📈</div>
+      <!-- nom du service -->
+      <div class="d3t">Marketing digital</div>
+      <!-- description du service -->
+      <div class="d3p">Stratégies SEO et réseaux sociaux pour booster votre visibilité.</div>
+    </div>
+    <!-- bloc présentant le service de maintenance -->
+    <div class="d4">
+      <!-- icone du service -->
+      <div class="d4i">🔧</div>
+      <!-- nom du service -->
+      <div class="d4t">Maintenance</div>
+      <!-- description du service -->
+      <div class="d4p">Suivi et mises à jour régulières pour que votre site reste au top.</div>
+    </div>
+  </div>
+</div>
+<!-- Section À propos de nous -->
+<div class="e">
+  
+  <!-- Bloc gauche : image de l'équipe -->
+  <div class="e1">
+    <!-- Ajout de l'attribut alt pour l'accessibilité -->
+    <img src="team.png" class="eimg" alt="Notre équipe DevStart">
+  </div>
+
+  <!-- Bloc droit : texte descriptif -->
+  <div class="e2">
+    <!-- Titre de la section -->
+    <h2 class="e2t">À propos de nous</h2>
+
+    <!-- Paragraphes descriptifs (utilisation de <p> au lieu de <div>) -->
+    <p class="e2p">
+      DevStart Agency est une jeune agence fondée par des passionnés du numérique. 
+      Notre équipe de 8 personnes accompagne les entreprises dans leur transformation digitale depuis 2021.
+    </p>
+
+    <p class="e2p">
+      Nous croyons que chaque entreprise mérite un site web qui lui ressemble vraiment.
+    </p>
+
+    <!-- Bouton vers l'histoire de l'agence -->
+    <a href="#" class="e2b" role="button">Notre histoire</a>
+  </div>
+</div>
+
+<!-- les clients qui parlent -->
+<div class="f"> <!-- section  principale contenant les témoignages et le titre de la section-->
+  <div class="f0">Ils nous font confiance</div>
+  <div class="ff"> <!-- section secondaire contenant les témoignages-->
+
+    <!--  Les témoignages-->
+    <div class="f1">  
+      <div class="f1t">"Excellent travail, livré en temps et en heure. Notre site a doublé notre taux de conversion."</div>
+      <div class="f1n">— Koffi A., Directeur, BenTech</div>
+    </div>
+
+    <div class="f2">
+      <div class="f2t">"Une équipe sérieuse et à l'écoute. Je recommande sans hésiter."</div>
+      <div class="f2n">— Mariame D., CEO, ModoShop</div>
+    </div>
+
+    <div class="f3">
+      <div class="f3t">"Ils ont compris notre vision dès le premier rendez-vous. Résultat impeccable."</div>
+      <div class="f3n">— Romuald S., Fondateur, GreenFood Bénin</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- formulaire contact -->
+<div class="g">
+  <div class="g0">Contactez-nous</div>
+  <div class="gf">
+    <input type="text" placeholder="Nom complet" class="gi"> <!-- ici l'utilisaeur peut entrer son nom complet et il aura comme idicatrice nom complet deja ecrire dans cette case -->
+    <input type="text" placeholder="Email" class="gi"> <!-- il aura devra entrer son mail dans la case -->
+    <input type="text" placeholder="Sujet" class="gi"> <!-- ici c'est son sujet -->
+    <textarea placeholder="Votre message..." class="gt"></textarea> <!-- ici grace a textarea il n'aura pas de limites il pourrra entrer beaucoup de texte quoi-->
+    <button class="gb">Envoyer</button> <!-- ici c'est pour le boutton d'envoie de tous ce qu'il a ecrit -->
+  </div>
+</div>
+
+<!-- bas de page --> 
+<!-- ici en gros c'est juste pour afficher des messages et on attribue une classe différent pour mieux les gerer c'est le bas de pages donc -->
+<div class="h">
+  <div class="h1">DevStart Agency &copy; 2024</div>
+  <div class="h2">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+  </div>
+  <div class="h3">contact@devstart.bj</div>
+</div>
+
+
+</body>
+</html>
